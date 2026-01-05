@@ -8,8 +8,8 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Calendar/',
-            FORMAT = 'PARQUET'
+            BULK 'https://sacadlsdatalake.dfs.core.windows.net/silver/AdventureWorks_Calendar/',
+            FORMAT = 'DELTA'
         ) as QUER1
 
 
@@ -23,8 +23,8 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Customers/',
-            FORMAT = 'PARQUET'
+            BULK 'https://sacadlsdatalake.dfs.core.windows.net/silver/AdventureWorks_Customers/',
+            FORMAT = 'DELTA'
         ) as QUER1
 
 
@@ -39,8 +39,8 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Products/',
-            FORMAT = 'PARQUET'
+            BULK 'https://sacadlsdatalake.dfs.core.windows.net/silver/AdventureWorks_Products/',
+            FORMAT = 'DELTA'
         ) as QUER1
 
 
@@ -54,8 +54,8 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Returns/',
-            FORMAT = 'PARQUET'
+            BULK 'https://sacadlsdatalake.dfs.core.windows.net/silver/AdventureWorks_Returns/',
+            FORMAT = 'DELTA'
         ) as QUER1
         
 
@@ -69,8 +69,8 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Returns/',
-            FORMAT = 'PARQUET'
+            BULK 'https://sacadlsdatalake.dfs.core.windows.net/silver/AdventureWorks_Returns/',
+            FORMAT = 'DELTA'
         ) as QUER1
 
 
@@ -84,8 +84,8 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Sales/',
-            FORMAT = 'PARQUET'
+            BULK 'https://sacadlsdatalake.dfs.core.windows.net/silver/AdventureWorks_Sales/',
+            FORMAT = 'DELTA'
         ) as QUER1
 
 
@@ -99,8 +99,8 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_SUbCategories/',
-            FORMAT = 'PARQUET'
+            BULK 'https://sacadlsdatalake.dfs.core.windows.net/silver/AdventureWorks_SUbCategories/',
+            FORMAT = 'DELTA'
         ) as QUER1
 
 
@@ -115,8 +115,6 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://awstoragedatalake.blob.core.windows.net/silver/AdventureWorks_Territories/',
-            FORMAT = 'PARQUET'
+            BULK 'https://sacadlsdatalake.dfs.core.windows.net/silver/AdventureWorks_Territories/',
+            FORMAT = 'DELTA'
         ) as QUER1
-
-
